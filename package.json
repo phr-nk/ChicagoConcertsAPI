@@ -1,0 +1,22 @@
+{
+  "name": "concertapi",
+  "version": "1.0.0",
+  "description": "API for getting local Chicago indie concerts.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Frank Lenoci",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.11.0",
+    "sequelize-cockroachdb": "^6.0.3"
+  }
+}
