@@ -2,10 +2,13 @@
   "name": "concertapi",
   "version": "1.0.0",
   "description": "API for getting local Chicago indie concerts.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node" : "14.x"
   },
   "author": "Frank Lenoci",
   "license": "ISC",

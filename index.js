@@ -9,8 +9,10 @@ app.use(bodyParser.json());
 var routes = require("./api/routes/concertRoutes"); //importing route
 routes(app); //register the route
 
-app.listen(port);
 app.use(function (req, res) {
   res.status(404).send({ url: req.originalUrl + " not found" });
 });
+
+app.listen(port);
+
 console.log("Concert RESTful API server started on: " + port);
