@@ -38,6 +38,9 @@ const Concert = sequelize.define("concerts", {
   date: {
     type: Sequelize.STRING,
   },
+  venue: {
+    type: Sequelize.STRING,
+  },
 });
 
 exports.list_all_concerts = function (req, res) {
@@ -48,7 +51,8 @@ exports.list_all_concerts = function (req, res) {
     });
     process.exit(0);
     */
-      res.json(concerts);
+      //res.json(concerts);
+      return concerts;
     })
     .catch(function (err) {
       res.send(err);
