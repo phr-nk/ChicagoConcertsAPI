@@ -51,8 +51,7 @@ exports.list_all_concerts = function (req, res) {
     });
     process.exit(0);
     */
-      //res.json(concerts);
-      return concerts;
+      res.json(concerts);
     })
     .catch(function (err) {
       res.send(err);
