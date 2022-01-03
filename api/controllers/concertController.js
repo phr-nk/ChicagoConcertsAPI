@@ -38,6 +38,9 @@ const Concert = sequelize.define("concerts", {
   date: {
     type: Sequelize.STRING,
   },
+  dayOfWeek: {
+    type: Sequelize.STRING,
+  },
   venue: {
     type: Sequelize.STRING,
   },
