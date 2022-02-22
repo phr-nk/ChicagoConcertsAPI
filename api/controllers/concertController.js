@@ -50,6 +50,9 @@ const Concert = sequelize.define("concerts", {
   link: {
     type: Sequelize.STRING,
   },
+  time: {
+    type: Sequelize.STRING,
+  },
 });
 
 exports.list_all_concerts = function (req, res) {
